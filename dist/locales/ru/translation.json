@@ -1,0 +1,15 @@
+{
+	"auth-creator-info": "Создатель: @dinerov ",
+	"auth-creator-info-2": "проект создан на базе ",
+	"auth-title": "Авторизация",
+	"auth-email-placeholder": "Почта",
+	"auth-password-placeholder": "Пароль",
+	"auth-enter-button": "Войти",
+	"auth-pass-info": "Для регистрации или восстановления пароля, перейдите на ",
+
+	"Home-FBlock-title": "Ваши любимые треки!",
+	"Home-FBlock-title2": "Хотите прослушать их сейчас?",
+	"Home-FSongs-title": "Любимые треки",
+	"Home-NSongs-title": "Новые треки",
+	"Home-Rsongs-title": "Случайные треки"
+}

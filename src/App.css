@@ -1,0 +1,74 @@
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--page-background-color);
+  --page-background-color: #151515;
+  --card-background-color: #252525;
+  --player-background-color: #252525c4;
+  --card-shadow-color: none;
+  --font-color: #fff;
+  font-family: 'SF-Pro';
+  --input-background-color: rgb(55 55 55);
+  --button-background-color: #9674ca;
+  --button-font-color: #fff;
+  overflow-x: hidden;
+}
+
+
+@font-face {
+  font-family: 'SF-Pro';
+  src: url(/fonts/SFPRODISPLAYMEDIUM.OTF) format('opentype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-Pro';
+  src: url(/fonts/SFPRODISPLAYBOLD.OTF) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+    width: 7px;
+    padding-right: 4px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 12px;
+
+}
+
+.swiper-slide {
+  width: fit-content !important;
+}
+
+.trekk-0 {
+  background: var(--button-background-color);
+  height: 6px;
+  border-radius: 8px ;
+}
+
+.trekk-1 {
+  height: 6px;
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+}
+
+.V-trekk-0 {
+  background: var(--button-background-color);
+  height: 6px;
+  border-radius: 8px ;
+}
+
+.V-trekk-1 {
+  height: 6px;
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+}
+

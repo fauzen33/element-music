@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.item:hover {
+  background-color: var(--card-background-color);
+}
+
+img {
+  border-radius: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 8px;
+  font-size: 12px;
+  height: 80%;
+  width: 100%;
+}
+

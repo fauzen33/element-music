@@ -1,0 +1,113 @@
+.FavoritesHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.11);
+  padding: 16px;
+  border-radius: 20px;
+  z-index: 20;
+  transition: all 0.4s ease-in-out;
+}
+
+.FavoritesUserData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.FavoritesUserAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.FavoritesRightHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.Hidden {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.SearchIcon {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  z-index: 40;
+}
+
+.SearchResult {
+  position: absolute;
+  top: 30%;
+  background-color: var(--input-background-color);
+  padding: 24px;
+  z-index: 40;
+  transition: all 0.2s ease-in-out;
+  border-radius: 16px;
+  width: 60%;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.ActiveSearch {
+  width: 90%;
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+
+  z-index: 40;
+}
+
+.Search {
+  width: 100%;
+  position: relative;
+    z-index: 40;
+}
+
+.SearchInput {
+  height: 34px;
+  border-radius: 15px;
+  background-color: var(--input-background-color);
+  border: none;
+  padding-left: 16px;
+  color: white;
+  font-family: SF-PRO;
+  outline: none;
+  z-index: 40;
+  width: 100%;
+
+
+}
+
+.SearchInput:active {
+  border: none;
+  outline: none;
+  z-index: 40;
+  transition: all 0.2s ease-in-out;
+}
+
+.FavoritesSettings {
+  transition: all 0.2s ease-in-out;
+}
+
+.Focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+}

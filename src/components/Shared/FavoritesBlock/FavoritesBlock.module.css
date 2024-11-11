@@ -1,0 +1,251 @@
+.FavotesBlock {
+  display: flex;
+  height: fit-content;
+  padding: 32px;
+  flex-direction: column;
+  background-color: var(--card-background-color);
+  position: relative;
+  
+}
+
+.FavoritesHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 8px;
+  margin-left: 8px;
+  animation: appear 0.4s ease-in-out;
+  z-index: 10;
+    background-color: rgba(0, 0, 0, 0.089);
+  padding: 16px;
+  border-radius: 20px;
+
+}
+
+.FavoritesUserData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.FavoritesUserAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  margin: 16px;
+}
+
+.FavoritesUserName {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.FavoritesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation: appear 0.6s ease-in-out;
+  z-index: 10;
+}
+
+.FavoritesButton {
+  background-color: #fff;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: 2px solid rgb(178 171 206 / 0%);
+  outline-offset: 2px;
+  transition: all 0.2s ;
+  z-index: 10;
+}
+
+.FavoritesButton:hover {
+  cursor: pointer;
+  outline: 2px solid white;
+
+}
+
+.FavoritesSettings  {
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.FavotesBlock {
+  display: flex;
+  height: 30vh;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+.FavoritesHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.089);
+  padding: 16px;
+  border-radius: 20px;
+
+}
+
+.FavoritesUserData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.FavoritesUserAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  margin: 16px;
+}
+
+.FavoritesUserName {
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.FavoritesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.FavoritesButton {
+  background-color: #fff;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FavoritesButton:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+}
+
+.AbsoluteBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  overflow: hidden;
+
+ 
+}
+
+.FavoritesRightHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+
+}
+
+.Hidden {
+  display: none;
+}
+
+.SearchInput {
+  height: 32px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: var(--input-background-color);
+  border: none;
+}
+
+.SearchIcon {
+  position: absolute;
+
+}
+
+.Search {
+  width: 100%;
+  border-radius: 999px;
+
+}
+
+.RedCircle {
+  background-color: #C96868;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 999px;
+
+}
+
+.YellowCircle {
+  background-color: #FADFA1;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 999px;
+
+}
+
+.WhiteCircle {
+  background-color: #bbb6b2;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 999px;
+
+}
+
+.BlueCircle {
+  background-color: #7EACB5;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 999px;
+}
+
+.Circles {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

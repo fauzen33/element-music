@@ -1,0 +1,97 @@
+.wrapper {
+  width: 80vw;
+  height: 80vh;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.close {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.contentItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+}
+
+.contentItem:hover {
+  background-color: var(--input-background-color);
+}
+
+.langBox {
+  transform: translate(0%, 60%);
+}
+
+.langButton {
+  position: absolute;
+  right: 26px;
+  border-radius: 8px;
+  border: 0;
+  width: fit-content;
+  background-color: var(--button-background-color);
+  padding: 8px;
+  color: var(--button-font-color);
+  font-size: 14px;
+  width: 10%;
+  font-family: 'SF-Pro';
+  transition: all 0.2s ease;
+  outline: 2px solid rgb(178 171 206 / 0%);
+  outline-offset: 2px;
+  margin: 8px;
+}
+
+
+.langButton:hover {
+  outline: 2px solid var(--button-background-color);
+}
+
+.Button {
+  border-radius: 8px;
+  border: 0;
+  width: fit-content;
+  background-color: var(--button-background-color);
+  padding: 8px;
+  color: var(--button-font-color);
+  font-size: 14px;
+  font-family: 'SF-Pro';
+  transition: all 0.2s ease;
+  outline: 2px solid rgb(178 171 206 / 0%);
+  outline-offset: 2px;
+  margin: 8px;
+}
+
+
+.Button:hover {
+  outline: 2px solid var(--button-background-color);
+}

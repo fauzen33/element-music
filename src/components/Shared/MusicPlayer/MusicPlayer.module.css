@@ -1,0 +1,174 @@
+.player {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--player-background-color);
+	backdrop-filter: blur(10px); /* эффект размытия */
+	-webkit-backdrop-filter: blur(10px); /* для поддержки Safari */
+	width: 90vw;
+	max-width: 90vw;
+	height: 8%;
+	position: fixed;
+	bottom: 12px;
+	border-radius: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	align-items: center;
+	padding: 8px;
+	padding-left: 14px;
+	justify-content: space-between;
+	z-index: 10;
+}
+
+.Controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2px;
+	margin: 8px;
+}
+
+.likeIcon {
+	cursor: pointer;
+	margin-right: 8px;
+	height: 100%;
+}
+
+.Cover {
+	border-radius: 10px;
+	height: 100%;
+	max-height: 60px;
+}
+
+.thumb {
+	width: 10px;
+	height: 10px;
+	margin-top: -2px;
+	background-color: var(--button-background-color);
+	border-radius: 999px;
+	outline: none;
+	transition: all 0.2s ;
+}
+
+.thumbActive {
+	transition: none;
+}
+
+.thumb:hover {
+	transform: scale(1.6);
+	outline: none;
+}
+
+
+
+.Progress {
+	height: 6px;
+	width: 100%;
+	margin-right: 4px;
+	margin-left: 4px;
+	border-radius: 8px;
+	
+}
+
+.ProgressBarWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ProgressText {
+	font-size: 12px;
+	font-weight: bold;
+	color: var(--font-color);
+}
+
+.TextInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.VolumeControl {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+	width: 20%;
+	
+}
+
+.VolumeSlider {
+	width: 100%;
+}
+
+.VolumeThumb {
+	height: 8px;
+	width: 8px;
+	background-color: var(--button-background-color);
+	border-radius: 999px;
+	margin-top: -1px;
+}
+
+.VolumeThumb:hover {
+	transform: scale(1.6);
+	outline: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.VolumeThumbActive {
+	outline: none;
+}
+
+.SongInfo {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+}
+
+.CoverImg {
+	aspect-ratio: 1/1;
+	height: 100%;
+	border-radius: 10px;
+}
+
+
+.Info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 8px;
+	font-size: 16px;
+	color: var(--font-color);
+	font-weight: bold;
+	width: 100%;
+}
+
+.Artist {
+	font-size: 14px;
+	font-weight: normal;
+	color: calc(var(--font-color));
+}
+
+.PauseBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+	margin: 0;
+	padding: 2px;
+
+}
+
+.PauseIcon {
+	margin: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+@media (pointer: coarse) {
+  .VolumeControl {
+		display: none;
+	}
+}

@@ -1,0 +1,166 @@
+
+
+main {
+	background-color: var(--page-background-color);
+	height: 100vh;
+	width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  height: 80vh;
+  width: 80vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.langButton {
+  margin-left: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--button-background-color);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 15px;
+  color: var(--font-color);
+
+}
+
+.leftBlock {
+  display: flex;
+  flex-direction: column;
+  margin-left: 128px;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.rightBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  margin-right: 128px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 15px;
+  color: var(--font-color);
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.form {
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--input-background-color);
+  padding: 8px;
+  color: var(--font-color);
+  font-size: 16px;
+  width: 100%;
+  font-family: 'SF-Pro';
+  transition: all 0.2s ease;
+  outline: 2px solid rgb(178 171 206 / 0%);
+  outline-offset: 4px;
+  margin: 8px;
+}
+
+.input:focus {
+    outline: 2px solid var(--input-background-color);
+    outline-offset: 2px;
+}
+
+.input:hover {
+  outline: 2px solid var(--input-background-color);
+  outline-offset: 2px;
+}
+
+.modalContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--button-background-color);
+  padding: 8px;
+  color: var(--button-font-color);
+  font-size: 14px;
+  width: 100%;
+  font-family: 'SF-Pro';
+  transition: all 0.2s ease;
+  outline: 2px solid rgb(178 171 206 / 0%);
+  outline-offset: 2px;
+  margin: 8px;
+}
+
+.button:hover {
+  outline: 2px solid var(--button-background-color);
+}
+
+.loginInfo {
+  font-size: 14px;
+  width: 100%;
+  color: var(--font-color);
+}
+
+.themeButton {
+  margin: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .leftBlock {
+    margin-left: 64px;
+    width: 40%;
+  }
+
+  .rightBlock {
+    margin-right: 64px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftBlock {
+    display: none;
+  }
+
+  .rightBlock {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .form {
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+  }
+}
